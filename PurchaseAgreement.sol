@@ -31,7 +31,9 @@ contract PurchaseAgreement {
     /// Only the seller can call this function
     error OnlySeller();
 
-    // modifiers kan tilkalle på revert funksjonen som tilbakestiller transaksjonen
+    // modifiers brukes for å sjekke at visse conditions er tilfredsstilt, hovedsaklig før funksjonen blir kjørt
+    // modifiers kan endre en funksjons oppførsel
+    // nyttig pga kan gjenbrukes
     modifier inState(State state_) {
         if(state != state_) {
             revert InvalidState();
