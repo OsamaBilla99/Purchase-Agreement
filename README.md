@@ -1,4 +1,4 @@
-# SafeTransactions
+# Purchase Agreement
 
 This project consists of a smart contract that ensures safe transaction between a seller and a buyer.  
 The seller needs to transfer a deposit to the contract upon creation.  
